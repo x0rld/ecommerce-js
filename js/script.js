@@ -44,7 +44,6 @@ function displayKitties(filter) {
         document.querySelector('#kitty-container').innerHTML += kittyCard
     }
     for (const button of document.getElementsByClassName('buy')) {
-        console.log(button.getAttribute("data-id"))
         button.removeEventListener('click',addToBasket)
         button.addEventListener('click', addToBasket)
     }
@@ -58,7 +57,7 @@ function init() {
         gender: "bi-gender-male",
         id: "7c4f2b75-f5f5-4810-ada1-a11e85460e52",
         quantity: 2,
-        src: "https://www.purina.com/sites/g/files/auxxlc196/files/styles/kraken_generic_max_width_240/public/Bengal_body_6.jpg?itok=HoyVWkCr"
+        src: "https://placekitten.com/g/200/300"
     })
     kittyList.push({
         name: "Olive",
@@ -67,7 +66,7 @@ function init() {
         gender: "bi-gender-male",
         id: "aaa079d2-acd7-4aa7-96d1-84e543db4ce2",
         quantity: 2,
-        src: "https://www.purina.com/sites/g/files/auxxlc196/files/styles/kraken_generic_max_width_240/public/AmericanCurlSHA_body_6.jpg?itok=1-yoW3el"
+        src: "https://placekitten.com/g/200/300"
     })
     kittyList.push({
         name: "liana",
@@ -76,7 +75,7 @@ function init() {
         gender: "bi-gender-male",
         id: "e0c1e50a-0ec6-4241-9e55-064b0ef1e8e1",
         quantity: 2,
-        src: "https://www.purina.com/sites/g/files/auxxlc196/files/styles/kraken_generic_max_width_240/public/AmericanBobtail_body_6.jpg"
+        src: "https://placekitten.com/g/200/300"
     })
     kittyList.push({
         name: "Licorice",
@@ -85,7 +84,7 @@ function init() {
         gender: "bi-gender-male",
         id: "a5a5d541-953d-43c6-a226-f2487b218b36",
         quantity: 2,
-        src: "https://www.purina.com/sites/g/files/auxxlc196/files/styles/kraken_generic_max_width_240/public/Abyssinian_body_7.jpg?itok=E0O3mW9s"
+        src: "https://placekitten.com/g/200/300"
     })
     kittyList.push({
         name: "Licorne",
@@ -94,7 +93,7 @@ function init() {
         gender: "bi-gender-male",
         id: "806d2c64-69ac-447d-a062-9433a2961c07",
         quantity: 2,
-        src: "https://www.purina.com/sites/g/files/auxxlc196/files/styles/kraken_generic_max_width_240/public/Javanese_body_6.jpg?itok=qgJ2m3sj"
+        src: "https://placekitten.com/g/200/300"
     })
     kittyList.push({
         name: "Tic Tac",
@@ -103,7 +102,7 @@ function init() {
         gender: "bi-gender-female",
         id: "e4da3468-0661-4556-85cc-cf2526eeb39c",
         quantity: 2,
-        src: "https://www.purina.com/sites/g/files/auxxlc196/files/styles/kraken_generic_max_width_240/public/AmericanWirehair_body_6.jpg?itok=LgJxqcDn"
+        src: "https://placekitten.com/g/200/300"
     })
     kittyList.push({
         name: "Toc",
@@ -112,7 +111,7 @@ function init() {
         gender: "bi-gender-female",
         id: 'b08aa170-34f5-4368-a5be-eaa7ca9f97b3',
         quantity: 2,
-        src: "https://www.purina.com/sites/g/files/auxxlc196/files/styles/kraken_generic_max_width_240/public/AmericanShorthair_body_6.jpg?itok=UKAO6ZyE"
+        src: "https://placekitten.com/g/200/300"
     })
     kittyList.push({
         name: "Freya",
@@ -121,7 +120,7 @@ function init() {
         gender: "bi-gender-female",
         id: "f485ea35-3634-4a35-ae3a-fdaa975152cf",
         quantity: 2,
-        src: "https://www.purina.com/sites/g/files/auxxlc196/files/styles/kraken_generic_max_width_240/public/Chartruese_body_6.jpg?itok=BRVxtf4e"
+        src: "https://placekitten.com/g/200/300"
     })
     kittyList.push({
         name: "Princess",
@@ -130,14 +129,12 @@ function init() {
         gender: "bi-gender-female",
         id: "bef10360-1d85-4097-9fa1-becf22613668",
         quantity: 2,
-        src: "https://www.purina.com/sites/g/files/auxxlc196/files/styles/kraken_generic_max_width_240/public/Birman_body_6.jpg?itok=sxZZT4Xl"
+        src: "https://placekitten.com/g/200/300"
     })
     displayKitties()
 }
 
 function addToBasket(element) {
-    console.log("panier");
-    console.log(cart);
     for (const kitty of kittyList) {
         if (kitty.id === element.target.dataset['id']) {
             if (!cart.has(kitty.id)) {
@@ -229,10 +226,10 @@ function eventCartButtons() {
 
 document.getElementById('reset').addEventListener('click',
     () => {
+    console.log("help")
         for (const kitty of kittyList) {
-            console.log()
             if (Array.from(cart.keys()).includes(kitty.id)) {
-                console.log(kitty.id)
+     //           console.log(kitty.id)
                 kitty.quantity = cart.get(kitty.id)
             }
         }

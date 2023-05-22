@@ -1,0 +1,74 @@
+[
+  {
+    "name": "Mew",
+    "breed": "Bengal",
+    "price": 1000,
+    "gender": "bi-gender-male",
+    "id": "7c4f2b75-f5f5-4810-ada1-a11e85460e52",
+    "quantity": 2,
+    "src": "https://placekitten.com/g/200/300"
+  },
+  {
+    "name": "Olive",
+    "breed": "American Curl",
+    "price": 500,
+    "gender": "bi-gender-male",
+    "id": "aaa079d2-acd7-4aa7-96d1-84e543db4ce2",
+    "quantity": 2,
+    "src": "https://placekitten.com/g/200/300"
+  },
+  {
+    "name": "liana",
+    "breed": "American Bobtail",
+    "price": 400,
+    "gender": "bi-gender-male",
+    "id": "e0c1e50a-0ec6-4241-9e55-064b0ef1e8e1",
+    "quantity": 2,
+    "src": "https://placekitten.com/g/200/300"
+  },
+  {
+    "name": "Licorice",
+    "breed": "Abyssinian Cat",
+    "price": 352,
+    "gender": "bi-gender-male",
+    "id": "a5a5d541-953d-43c6-a226-f2487b218b36",
+    "quantity": 2,
+    "src": "https://placekitten.com/g/200/300"
+  },
+  {
+    "name": "Licorne",
+    "breed": "Balinese-Javanese",
+    "price": 156,
+    "gender": "bi-gender-male",
+    "id": "806d2c64-69ac-447d-a062-9433a2961c07",
+    "quantity": 2,
+    "src": "https://placekitten.com/g/200/300"
+  },
+  {
+    "name": "Tic Tac",
+    "breed": "American Wirehair",
+    "price": 485,
+    "gender": "bi-gender-female",
+    "id": "e4da3468-0661-4556-85cc-cf2526eeb39c",
+    "quantity": 2,
+    "src": "https://placekitten.com/g/200/300"
+  },
+  {
+    "name": "Toc",
+    "breed": "American Shorthair ",
+    "price": 489,
+    "gender": "bi-gender-female",
+    "id": "b08aa170-34f5-4368-a5be-eaa7ca9f97b3",
+    "quantity": 2,
+    "src": "https://placekitten.com/g/200/300"
+  },
+  {
+    "name": "Freya",
+    "breed": "Chartreux",
+    "price": 565,
+    "gender": "bi-gender-female",
+    "id": "f485ea35-3634-4a35-ae3a-fdaa975152cf",
+    "quantity": 2,
+    "src": "https://placekitten.com/g/200/300"
+  }
+]
